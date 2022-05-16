@@ -1,0 +1,206 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+  }
+
+  &__logo {
+    margin: 0 auto;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+
+  &__list {
+    display: flex;
+  
+  }
+
+  &__item {
+    padding-right: 45px;
+    padding-left: 35px;
+  }
+
+  &__link {
+    @extend %title-font;
+    color: rgba(54, 56, 56, 0.9033);
+    line-height: 22px;
+  }
+}
+
+.footer {
+  background-color: #DFDFDF;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px 80px 0px;
+  }
+
+  &__socials {
+    margin-left: 99px;
+    margin-right: auto;
+    width: 125px;
+  }
+
+  &__socials-item {
+    margin-bottom: 15px;
+  }
+
+  &__social-link {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: #707070;
+      padding-left: 30px;
+      position: relative;
+          &::before {
+              content: '';
+              
+              position: absolute;
+              left: 0;
+              top: 3px;
+              width: 16px;
+              height: 16px;
+            }
+  }
+
+  &__social-link--facebook::before{
+    background-image: url(../images/facebook\ \(1\).svg);
+  }
+  &__social-link--instagram::before {
+    background-image: url(../images/instagram\ \(1\).svg);
+    width: 14px;
+    height: 14px;
+    
+  }
+  &__social-link--pinterest::before {
+    background-image: url(../images/Pinterest.svg);
+    top: 2px;
+  }
+  &__social-link--whatsapp::before {
+    background-image: url(../images/whatsapp.svg);
+    width: 14px;
+    height: 14px;
+    top: 3px;
+  }  
+  &__social-link--youtube::before {
+    background-image: url(../images/youtube.svg);
+    width: 18px;
+    height: 12px;
+    top: 4px;
+  }
+  
+  
+
+  &__menu {
+    margin-right: 60px;
+    width: 125px;
+  }
+
+  &__menu-list {}
+
+  &__menu-item {
+    margin-bottom: 15px;
+  }
+
+  &__menu-link {
+     font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: #707070;
+  }
+
+  &__bottom {
+    background-color: $black;
+    text-align: center;
+  }
+
+  &__adress {
+    padding: 42px 15px 41px;
+    color: #A1A1A1;
+  }
+}
+
+.contact-us {
+  width: 539px;
+  &__title {
+    color: $black;
+    @extend %title-font;
+    line-height: 23px;
+    margin: 0px 0px 16px 0px;
+  }
+
+  &__subtitle {
+    max-width: 476px;
+    margin: 0px 0px 16px 0px;
+    color: $default;
+  }
+
+  &__email {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    color: $black;
+    display: inline-block;
+    position: relative;
+    &::before{
+      content: '';
+      background-image: url(../images/envelope.svg);
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__form-input {
+    background-color: transparent;
+    border: 1px solid rgba($black, 0.7);
+    border-radius: 21px;
+    padding: 6px 10px 6px 18px;
+    // width: 368px;
+    width: 100%;
+    &::placeholder{
+      font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #A1A1A1;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    background-color: $black;
+    border-radius: 21px;
+    color: #fffff0;
+    font-weight: 600;
+    padding: 6px 12px;
+    min-width: 160px;
+    margin-left: 9px;
+    cursor: pointer;
+  }
+}
