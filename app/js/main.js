@@ -14,4 +14,12 @@ $(function () {
     autoPlay: true,
   });
 
+  var mixer = mixitup('.gallery__main', {
+    load: {
+      filter: '.living'
+    }
+  });
+
+
+
 })
