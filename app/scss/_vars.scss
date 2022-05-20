@@ -8,3 +8,10 @@ $default: #5A5A5A;
   font-weight: 700;
   color: #363838;
 }
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+ @return m#{i}n(#{$numbers});
+}
