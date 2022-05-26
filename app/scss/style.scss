@@ -7,7 +7,7 @@
 .header {
   &__inner {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 120px;
   }
@@ -21,6 +21,10 @@
     border: none;
     padding: 0;
     cursor: pointer;
+  }
+
+  &__btn-menu {
+    display: none;
   }
 }
 
@@ -248,6 +252,7 @@
 
   &__list {
     display: flex;
+    overflow-x: auto;
   }
 
   &__list-item {
@@ -925,6 +930,9 @@
 .map {
   margin-top: -53px;
   margin-bottom: 50px;
+  iframe{
+    height: 578px;
+  }
 }
 
 .contact {
@@ -1620,3 +1628,5 @@
     border: none;
   }
 }
+
+@import 'media';
